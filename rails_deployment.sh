@@ -6,8 +6,9 @@ set -e
 script_runner=$(whoami)
 echo "Enter domain name: "
 read domain_name
-
-cd ~/repos
+cd ~
+mkdir repos
+cd repos
 mkdir $domain_name.git
 cd $domain_name.git
 git init --bare
