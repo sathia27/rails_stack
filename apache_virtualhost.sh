@@ -23,7 +23,7 @@ function apache_virtualhost {
 
 	echo "<VirtualHost *:80>" > $1
 	echo "    ServerName $1" >> $1
-	echo "    DocumentRoot /home/$2/sites/$1/public/" >> $1
+	echo "    DocumentRoot /home/$2/sites/$1/public/public/" >> $1
 	echo "    ErrorLog /home/$2/sites/$1/logs/error.log" >> $1
     echo "    CustomLog /home/$2/sites/$1/logs/access.log combined" >> $1
 	echo "</VirtualHost>" >> $1
